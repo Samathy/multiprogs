@@ -4,12 +4,13 @@
 #include "prog2.h"
 #include "shared.h"
 
-char * progname = "prog2";
 
 int prog2helper() {
     return 2;
 }
 
+#ifdef prog2
+char * progname = "prog2";
 int main(int argc, char ** argv) {
     int i;
     printf("I am prog2\n");
@@ -21,3 +22,4 @@ int main(int argc, char ** argv) {
     printf("%d\n", i);
     return 0;
 }
+#endif

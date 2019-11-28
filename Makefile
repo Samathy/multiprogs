@@ -1,5 +1,4 @@
 
-
 SHAREDOBJS=shared.o
 
 prog1: prog1.o $(SHAREDOBJS)
